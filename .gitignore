@@ -1,0 +1,38 @@
+/backend/node_module
+/ngrok.yml
+.idea*
+
+*.iml
+*.log
+*.swp
+*.swo
+*.swn
+
+# Local .env files
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+# Local configuration file (git config --local)
+*.lst
+
+

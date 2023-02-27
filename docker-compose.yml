@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  backend:
+    image: nodejs-app
+    build:
+      context: ./backend
+      args:
+        NODE_ENV: production
+        PORT: "3400"
+    ports:
+      - "3400:3400"
+      
+  ngrok:
+    image: wernight/ngrok
+    volumes:
+      - ./ngrok.yml:/home/ngrok/.ngrok2/ngrok.yml
+    ports:
+      - "4040:4040"
+    command: ["ngrok", "http", "backend:3400"]
